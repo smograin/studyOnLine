@@ -1,0 +1,91 @@
+/* 版心*/
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f3f5f7;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  font-family: MicrosoftYaHei;
+}
+
+.head #trademark {
+  width: 195px;
+  height: 42px;
+}
+
+.head .panel {
+  display: flex;
+  width: 246px;
+	height: 30px
+}
+
+.head .panel a {
+  width: 237px;
+	height: 18px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #050505;
+}
+
+.head .input {
+  display: flex;
+  width: 412px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid #00a4ff;
+}
+
+.head .input input {
+  background-color: #f3f5f7;
+  width: 361px;
+  height: 40px;
+}
+
+.head .input .research {
+  display: flex;
+  width: 51px;
+  height: 41px;
+}
+
+.head .input .research {
+  margin: -1.31px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f3f5f7;
+  border: none;
+}
+
+.head .input .research img {
+  width: 51px;
+  height: 41px;
+  border-radius: 50%;
+}
+
+.head .user {
+  display: flex;
+  width: 118px;
+  height: 33px;
+  align-items: center;
+}
+
+.head .user img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.head .user #userName {
+    height: 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #666666;
+}
