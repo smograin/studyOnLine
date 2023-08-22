@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* 版心*/
 .wrapper{
   width: 1200px;
@@ -8,6 +12,8 @@ body {
   background-color: #f3f5f7;
 }
 
+/* 1.头部 */
+
 .head {
   display: flex;
   align-items: center;
@@ -15,19 +21,25 @@ body {
   height: 100px;
   font-family: MicrosoftYaHei;
 }
-
+/* 商标 */
 .head #trademark {
   width: 195px;
   height: 42px;
 }
-
-.head .panel {
+/* 导航 */
+.head .nav ul {
   display: flex;
+  justify-content: space-around;
   width: 246px;
 	height: 30px
 }
 
-.head .panel a {
+.head .nav ul li:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+.head .nav a {
+  padding: 0px 9px 12px;
   width: 237px;
 	height: 18px;
 	font-size: 18px;
@@ -35,10 +47,19 @@ body {
 	color: #050505;
 }
 
-.head .input {
+.head div {
   display: flex;
+  align-items: center;
+}
+
+/* 输入 */
+.head .input {
+  border-radius: 40px;
+  display: flex;
+  justify-content: right;
   width: 412px;
   height: 40px;
+  margin-right: 30px;
   overflow: hidden;
   border: 2px solid #00a4ff;
 }
@@ -47,16 +68,18 @@ body {
   background-color: #f3f5f7;
   width: 361px;
   height: 40px;
+  
 }
 
 .head .input .research {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 51px;
-  height: 41px;
+  height: 40px;
 }
 
 .head .input .research {
-  margin: -1.31px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -65,11 +88,16 @@ body {
 }
 
 .head .input .research img {
+  width: 40px;
+}
+
+.head .input .research img {
   width: 51px;
   height: 41px;
   border-radius: 50%;
 }
 
+/* 用户 */
 .head .user {
   display: flex;
   width: 118px;
@@ -79,7 +107,8 @@ body {
 
 .head .user img {
   width: 33px;
-  height: 33px;
+  height: 35px;
+  margin-right: 4px;
   border-radius: 50%;
 }
 
@@ -88,4 +117,205 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
     color: #666666;
+}
+
+/* 2.banner区域 */
+.banner {
+  width: 100%;
+  height: 420px;
+  margin: 0 auto 8px;
+  overflow: hidden;
+  background-image: url(../images/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #1c036c;
+}
+
+.banner .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* banner 左 */
+.banner .left {
+  width: 190px;
+  height: 420px;
+  color: #fff;
+  background-color: rgb(0, 0, 0 ,0.42);
+  padding: 12px 21px 12px  20px;
+
+}
+
+.banner .left ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner .left li {
+  height: 43px;
+  background-image: url(../images/rightPoint.png);
+  background-repeat: no-repeat;
+  background-size: 14%;
+  background-position: center right;
+}
+
+.banner .left li a:hover {
+  color: #fff;
+}
+
+.banner .left li a {
+  font-size: 14px;
+  line-height: 44px;
+}
+
+/* banner 右 */
+.banner .right {
+  width: 231px;
+  height: 300px;
+  margin: 50px 0 70px;
+  background-color: #fff;
+}
+
+.banner .right #myLessonsTable {
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #9bceea;
+}
+
+.banner .right ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+}
+
+.banner .right ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.banner .right .lessons span {
+  color: #4e4e4e;
+}
+
+.banner .right .lessons a{
+  font-size: 14px;
+
+  color: #4e4e4e;
+}
+
+.banner .right .lessons p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.banner .right #allLessons {
+  padding-top: 3px;
+  padding-bottom: 0;
+  border: 0 solid #000;
+}
+
+.banner .right #allLessons a {
+  display: inline-block;
+  width: 200px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 16px;
+  text-align: center;
+  color: #00a4ff;
+  border: 1px solid #00a4ff;
+}
+
+/* 3.金品推荐 */
+.rcd {
+  height: 60px;
+  padding: 21px 26px 21px 34px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 0px #6d6a6a; ;
+
+}
+
+.rcd span {
+  color: #00a4ff;
+  margin-right: 36px;
+}
+
+
+.rcd ul {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 800px;
+}
+
+.rcd ul li {
+  width: 100px;
+  padding-left: 23px;
+  border-left: 1px solid #bfbfbf;
+  text-align: center;
+}
+
+.rcd ul li a {
+  color: #050505;
+}
+
+.rcd button {
+  display: inline-block;
+  margin-left: 80px;
+  color: #00a4ff;
+  background-color: #fff;
+  border: 0px solid #000;
+}
+
+/* 精品推荐--块域 */
+.rcdB {
+  margin-top: 37px;
+  height: 595px;
+  /* background-color: pink; */
+}
+
+.rcdB .rcdBHead {
+  display: flex;
+  justify-content: space-between;\margin-bottom: 8px;
+}
+
+.rcdB span {
+  line-height: 30px;
+  font-size: 20px;
+  color: #494949;
+}
+
+.rcdB a {
+  margin-right: 35px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.rcdB ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  height: 555px;
+}
+
+.rcdB ul li {
+  width: 228px;
+	height: 270px;
+	background-color: #ffffff;
+	
+}
+
+.product {
+
+}
+
+.product:hover {
+  box-shadow: 0px 2px 5px 0px 
+		rgba(118, 118, 118, 0.5);
 }
